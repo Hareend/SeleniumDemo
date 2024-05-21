@@ -20,12 +20,12 @@ public class AjaxFormTest extends DriverIntializer{
 	HomePage homepage;
 	InputForm inputform;
 	ScreenshotUtil screenshot;
-	ReportUtil reportutil;
+	//ReportUtil reportutil;
 	AjaxForm ajaxform;
 	
 	String expected_Message="Form has been submitted successfully!";
 	@Test
-	public void verifyajaxform() throws IOException 
+	public void ajaxFormPage() throws IOException 
 	{
 		driver = getDriver();
 		homepage = new HomePage(driver);
@@ -43,13 +43,13 @@ public class AjaxFormTest extends DriverIntializer{
 		screenshot= new ScreenshotUtil();
 		screenshot.TakeScreenshot(driver,"AjaxFormPage");
 		
-		reportutil= new ReportUtil();
+		/*reportutil= new ReportUtil();
 		reportutil.generateReports();
 		reportutil.verifygenerateReports();
 		reportutil.createTest("Testing: Simple Form Test");
 		reportutil.extenTestLogINFO();
 		reportutil.extenTestLogPASS();
 		reportutil.extenTestLogFAIL();
-		//reportutil.extenReportFLUSH();
+		//reportutil.extenReportFLUSH();*/
 	}
 }

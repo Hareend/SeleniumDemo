@@ -19,10 +19,10 @@ public class RadioButtonsTest extends DriverIntializer {
 	RadioButtons radiobuttons;
 	InputForm inputform;
 	ScreenshotUtil screenshot;
-	ReportUtil reportutil;
+	//ReportUtil reportutil;
 	
 	@Test(priority=2)
-	public void verifyradio() throws IOException
+	public void radioButtonPage() throws IOException
 	{
 		driver = getDriver();
 		homepage = new HomePage(driver);
@@ -36,14 +36,14 @@ public class RadioButtonsTest extends DriverIntializer {
 		screenshot= new ScreenshotUtil();
 		screenshot.TakeScreenshot(driver,"Radio_Button");
 		
-		reportutil= new ReportUtil();
+	/*	reportutil= new ReportUtil();
 		reportutil.generateReports();
 		reportutil.verifygenerateReports();
 		reportutil.createTest("Testing: Radio Button Test");
 		reportutil.extenTestLogINFO();
 		reportutil.extenTestLogPASS();
 		reportutil.extenTestLogFAIL();
-		//reportutil.extenReportFLUSH();
+		//reportutil.extenReportFLUSH();*/
 		
 	}
 

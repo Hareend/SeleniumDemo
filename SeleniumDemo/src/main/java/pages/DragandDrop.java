@@ -8,10 +8,13 @@ import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
+import utils.WaitUtil;
+
 public class DragandDrop {
 	
 	WebDriver driver; 
     Actions actions; 
+    WaitUtil waitutil;
     
     public DragandDrop(WebDriver driver)
     { 
@@ -25,7 +28,9 @@ public class DragandDrop {
  
     public void dragNDropElement() 
     { 
-    	
+    	waitutil= new WaitUtil(driver);
+    	waitutil.explicitWaitVisibilityOfPageElement(elementToDrag);
+    	waitutil.explicitWaitVisibilityOfPageElement(target);
        actions.dragAndDrop(elementToDrag,target).build().perform();
     	
     } 

@@ -17,12 +17,12 @@ public class JqueryUITest extends DriverIntializer{
 	WebDriver driver;
 	HomePage homepage;
 	JqueryUIPage jqueryui;
-	ReportUtil reportutil;
+	//ReportUtil reportutil;
 	ScreenshotUtil screenshot;
 	
 	
 	@Test
-	public void verifyJquerypage() throws IOException
+	public void jQueryPage() throws IOException
 	{
 		driver = getDriver();
 		homepage = new HomePage(driver);
@@ -34,14 +34,14 @@ public class JqueryUITest extends DriverIntializer{
 		screenshot= new ScreenshotUtil();
 		screenshot.TakeScreenshot(driver,"JqueryPage");
 		
-		reportutil= new ReportUtil();
+	/*	reportutil= new ReportUtil();
 		reportutil.generateReports();
 		reportutil.verifygenerateReports();
 		reportutil.createTest("Testing: Jquery Form Test");
 		reportutil.extenTestLogINFO();
 		reportutil.extenTestLogPASS();
 		reportutil.extenTestLogFAIL();
-		//reportutil.extenReportFLUSH();
+		//reportutil.extenReportFLUSH();*/
 	}
 
 }

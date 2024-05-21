@@ -23,12 +23,12 @@ public class FaceBookTest extends DriverIntializer{
 	AlertsAndModals alertandmodals;
 	SwitchNewWindow switchnewwindow;
 	ScreenshotUtil screenshot;
-	ReportUtil reportutil;
+	//ReportUtil reportutil;
 	String exptected_Text="Obsqura Zone ";
 	WaitUtil waitutil;
 	
 	@Test(priority = 1)
-	public void verifyClicklikeUsOnFacebook() throws IOException
+	public void faceBookPage() throws IOException
 	{
 		driver=getDriver();
 		homePage= new HomePage(driver);
@@ -49,11 +49,11 @@ public class FaceBookTest extends DriverIntializer{
 		screenshot.TakeScreenshot(driver,"FaceBookPage");
 		
 		
-		reportutil= new ReportUtil();
+	/*	reportutil= new ReportUtil();
 		reportutil.generateReports();
 		reportutil.verifygenerateReports();
 		reportutil.createTest("Report: FaceBookPage");
-		reportutil.extenReportFLUSH();
+		reportutil.extenReportFLUSH();*/
 	}
 
 }

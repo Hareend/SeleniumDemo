@@ -21,11 +21,11 @@ public class DragandDropTest extends DriverIntializer{
 	Actions action;
 	HomePage homepage;
 	ScreenshotUtil screenshot;
-	ReportUtil reportutil;
+	//ReportUtil reportutil;
 	DragandDrop dragandrop;
 	
 	@Test
-	public void verifydraganddrop() throws IOException, InterruptedException
+	public void dragNDropPage() throws IOException, InterruptedException
 	{
 		driver = getDriver();
 		homepage = new HomePage(driver);
@@ -38,14 +38,14 @@ public class DragandDropTest extends DriverIntializer{
 		screenshot= new ScreenshotUtil();
 		screenshot.TakeScreenshot(driver,"DragNDrop");
 		
-		reportutil= new ReportUtil();
+	/*	reportutil= new ReportUtil();
 		reportutil.generateReports();
 		reportutil.verifygenerateReports();
 		reportutil.createTest("Testing: Drag and Drop Page");
 		reportutil.extenTestLogINFO();
 		reportutil.extenTestLogPASS();
 		reportutil.extenTestLogFAIL();
-		//reportutil.extenReportFLUSH();
+		//reportutil.extenReportFLUSH();*/
 	}
 
 }

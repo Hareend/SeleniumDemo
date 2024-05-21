@@ -27,7 +27,7 @@ public class TablePaginationTest extends DriverIntializer{
 	int rowNumber;
 	
 	ScreenshotUtil screenshot;
-	ReportUtil reportutil;	
+	//ReportUtil reportutil;	
 	
 	@Test(priority = 1)
 	public void getValuesFromExcel() throws IOException
@@ -68,14 +68,14 @@ public class TablePaginationTest extends DriverIntializer{
 		screenshot= new ScreenshotUtil();
 		screenshot.TakeScreenshot(driver,"Table Pagination");
 		
-		reportutil= new ReportUtil();
+	/*	reportutil= new ReportUtil();
 		reportutil.generateReports();
 		reportutil.verifygenerateReports();
 		reportutil.createTest("Testing: Table Pagination");
 		reportutil.extenTestLogINFO();
 		reportutil.extenTestLogPASS();
 		reportutil.extenTestLogFAIL();
-		reportutil.extenReportFLUSH();
+		reportutil.extenReportFLUSH();*/
 	}	
 	
 	

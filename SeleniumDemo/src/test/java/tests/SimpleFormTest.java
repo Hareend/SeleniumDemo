@@ -19,11 +19,11 @@ public class SimpleFormTest extends DriverIntializer{
 	HomePage homepage;
 	SimpleForm simpleform;
 	ScreenshotUtil screenshot;
-	ReportUtil reportutil;
+//	ReportUtil reportutil;
 	
 	
 	@Test(priority=1)
-	public void verify() throws IOException
+	public void simpleFormPage() throws IOException
 	{
 		//try {
 			//System.out.println(PropertyReaderUtil.getproperty("URL"));
@@ -49,14 +49,14 @@ public class SimpleFormTest extends DriverIntializer{
 		screenshot= new ScreenshotUtil();
 		screenshot.TakeScreenshot(driver,"SimpleInputFormPage");
 		
-		reportutil= new ReportUtil();
+	/*	reportutil= new ReportUtil();
 		reportutil.generateReports();
 		reportutil.verifygenerateReports();
 		reportutil.createTest("Testing: Simple Form Test");
 		reportutil.extenTestLogINFO();
 		reportutil.extenTestLogPASS();
 		reportutil.extenTestLogFAIL();
-		//reportutil.extenReportFLUSH();
+		//reportutil.extenReportFLUSH();*/
 		
 	}
 }

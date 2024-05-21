@@ -20,13 +20,13 @@ public class JavaScriptAlertTest extends DriverIntializer
 	AlertsAndModals alertsAndModals;
 	JavaScriptAlert javaScriptAlert;
 	ScreenshotUtil screenshot;
-	ReportUtil reportutil;
+//	ReportUtil reportutil;
 	
 	static String expectedValue_AlertBox="I am a Javascript alert box!";
 	static String expectedValue_PromptBox="Please enter your name";
 	
 	@Test(priority = 1)
-	public void verifyJavaScriptAlertBox() throws IOException
+	public void javaScriptAlertBox() throws IOException
 	{
 		driver=getDriver();
 		homePage=new HomePage(driver);
@@ -43,13 +43,13 @@ public class JavaScriptAlertTest extends DriverIntializer
 		screenshot= new ScreenshotUtil();
 		screenshot.TakeScreenshot(driver,"JavascriptAlert");
 		
-		reportutil= new ReportUtil();
+	/*	reportutil= new ReportUtil();
 		reportutil.generateReports();
 		reportutil.verifygenerateReports();
 		reportutil.createTest("Testing: Javascript Alert Page");
 		reportutil.extenTestLogINFO();
 		reportutil.extenTestLogPASS();
 		reportutil.extenTestLogFAIL();
-		//reportutil.extenReportFLUSH();
+		//reportutil.extenReportFLUSH();*/
 	}
 }

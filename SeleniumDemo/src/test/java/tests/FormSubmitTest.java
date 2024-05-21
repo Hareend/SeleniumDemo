@@ -21,13 +21,13 @@ public class FormSubmitTest extends DriverIntializer{
 	RadioButtons radiobuttons;
 	InputForm inputform;
 	ScreenshotUtil screenshot;
-	ReportUtil reportutil;
+	//ReportUtil reportutil;
 	FormSubmit formsubmit;
 	String expectedMessage= "Form has been submitted successfully!";
 	String expectedCheckBoxValidationMessage="You must agree before submitting.";
 	
 	@Test(priority=1)
-	public void verifyformsubmit() throws IOException
+	public void formSubmitPage() throws IOException
 	{
 		driver = getDriver();
 		homepage = new HomePage(driver);
@@ -50,14 +50,14 @@ public class FormSubmitTest extends DriverIntializer{
 		screenshot= new ScreenshotUtil();
 		screenshot.TakeScreenshot(driver,"FormSubmitPage");
 		
-		reportutil= new ReportUtil();
+	/*	reportutil= new ReportUtil();
 		reportutil.generateReports();
 		reportutil.verifygenerateReports();
 		reportutil.createTest("Testing: Form Submit Page");
 		reportutil.extenTestLogINFO();
 		reportutil.extenTestLogPASS();
 		reportutil.extenTestLogFAIL();
-		reportutil.extenReportFLUSH();
+		reportutil.extenReportFLUSH();*/
 		
 	}
 	
@@ -79,13 +79,13 @@ public class FormSubmitTest extends DriverIntializer{
 		screenshot= new ScreenshotUtil();
 		screenshot.TakeScreenshot(driver,"FormSubmit_CheckBoxValidationMessageDisplay");
 		
-		reportutil= new ReportUtil();
+	/*	reportutil= new ReportUtil();
 		reportutil.generateReports();
 		reportutil.verifygenerateReports();
 		reportutil.createTest("Testing: FormSubmit_CheckBoxValidationMessageDisplay");
 		reportutil.extenTestLogINFO();
 		reportutil.extenTestLogPASS();
 		reportutil.extenTestLogFAIL();
-		//reportutil.extenReportFLUSH();
+		//reportutil.extenReportFLUSH();*/
 	}
 }
