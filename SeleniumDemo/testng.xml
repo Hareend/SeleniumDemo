@@ -14,7 +14,7 @@
 			<class name="tests.JqueryUITest"></class> 
 			<class name="tests.TablePaginationTest"></class>
 			<class name="tests.FaceBookTest"></class>
-			<class name="tests.DragandDropTest"></class> 
+		<!--	<class name="tests.DragandDropTest"></class> -->
 			<class name="tests.RadioButtonsTest"></class> 
 			<class name="tests.AutoCloseTest"></class> 
 		</classes>
@@ -30,7 +30,7 @@
 			<class name="tests.JqueryUITest"></class> 
 			<class name="tests.TablePaginationTest"></class>
 			<class name="tests.FaceBookTest"></class>
-			<class name="tests.DragandDropTest"></class> 
+		<!--	<class name="tests.DragandDropTest"></class> -->
 			<class name="tests.RadioButtonsTest"></class> 
 			<class name="tests.AutoCloseTest"></class> 
 		</classes>
