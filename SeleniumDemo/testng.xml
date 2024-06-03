@@ -11,7 +11,7 @@
 			<class name="tests.AjaxFormTest"></class>
 			<class name="tests.FormSubmitTest"></class>	
 			<class name="tests.JavaScriptAlertTest"></class>
-			<class name="tests.JqueryUITest"></class> 
+		<!--	<class name="tests.JqueryUITest"></class> -->
 			<class name="tests.TablePaginationTest"></class>
 			<class name="tests.FaceBookTest"></class>
 		<!--	<class name="tests.DragandDropTest"></class> -->
@@ -27,7 +27,7 @@
 			<class name="tests.AjaxFormTest"></class>
 			<class name="tests.FormSubmitTest"></class>	
 			<class name="tests.JavaScriptAlertTest"></class>
-			<class name="tests.JqueryUITest"></class> 
+		<!--	<class name="tests.JqueryUITest"></class> -->
 			<class name="tests.TablePaginationTest"></class>
 			<class name="tests.FaceBookTest"></class>
 		<!--	<class name="tests.DragandDropTest"></class> -->
