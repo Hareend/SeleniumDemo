@@ -1,20 +1,41 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="MySeleniumDemo">
+<suite name="MySeleniumDemo" parallel="tests" thread-count="2">
 	<listeners>
 		<listener class-name="utils.ReportUtil"></listener>
 	</listeners>
-	<test name ="SeleniumDemo">
+	
+	<test name ="SeleniumDemoChrome">
+		<parameter name="browser" value="chrome"/>
 		<classes>
 		<class name="tests.SimpleFormTest"></class>
-			<class name="tests.RadioButtonsTest"></class> 
 			<class name="tests.AjaxFormTest"></class>
 			<class name="tests.FormSubmitTest"></class>	
 			<class name="tests.JavaScriptAlertTest"></class>
 			<class name="tests.JqueryUITest"></class> 
 			<class name="tests.TablePaginationTest"></class>
 			<class name="tests.FaceBookTest"></class>
-		<!--	<class name="tests.DragandDropTest"></class>-->
+			<class name="tests.DragandDropTest"></class> 
+			<class name="tests.RadioButtonsTest"></class> 
+			<class name="tests.AutoCloseTest"></class> 
 		</classes>
 	</test>
+	
+	<test name ="SeleniumDemoFirefox">
+		<parameter name="browser" value="firefox"/>
+		<classes>
+		<class name="tests.SimpleFormTest"></class>
+			<class name="tests.AjaxFormTest"></class>
+			<class name="tests.FormSubmitTest"></class>	
+			<class name="tests.JavaScriptAlertTest"></class>
+			<class name="tests.JqueryUITest"></class> 
+			<class name="tests.TablePaginationTest"></class>
+			<class name="tests.FaceBookTest"></class>
+			<class name="tests.DragandDropTest"></class> 
+			<class name="tests.RadioButtonsTest"></class> 
+			<class name="tests.AutoCloseTest"></class> 
+		</classes>
+	</test>
+	
+	
 	
 </suite>

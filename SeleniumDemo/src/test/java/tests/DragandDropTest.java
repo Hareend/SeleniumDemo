@@ -33,7 +33,7 @@ public class DragandDropTest extends DriverIntializer{
 		Thread.sleep(5000);
 		dragandrop = new DragandDrop(driver);
 		dragandrop.dragNDropElement();
-		
+		Thread.sleep(6000);
 		
 		screenshot= new ScreenshotUtil();
 		screenshot.TakeScreenshot(driver,"DragNDrop");

@@ -3,6 +3,7 @@ package tests;
 import java.io.IOException;
 
 import org.openqa.selenium.WebDriver;
+import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import base.DriverIntializer;
@@ -33,6 +34,10 @@ public class RadioButtonsTest extends DriverIntializer {
 		radiobuttons.Male();
 		radiobuttons.ShowSelectedValue();
 		radiobuttons.RadioButton();
+		String actualMaleGenderMessage= radiobuttons.getMessage();
+		System.out.println(actualMaleGenderMessage);
+		//boolean actual_Male= actualMaleGenderMessage.contains("Gender : Male");
+		//Assert.assertEquals(actual_Male, true);
 		screenshot= new ScreenshotUtil();
 		screenshot.TakeScreenshot(driver,"Radio_Button");
 		

@@ -59,6 +59,14 @@ public class DriverIntializer {
 				driver.manage().window().maximize();
 				break;
 			}
+			case "edge":
+			{
+				System.setProperty("webdriver.edge.driver",System.getProperty("user.dir")+"\\src\\main\\resources\\msedgedriver.exe");		
+				driver=new EdgeDriver();
+				driver.get(PAGE_URL);
+				driver.manage().window().maximize();
+				break;
+			}
 			
 			default:
 			{

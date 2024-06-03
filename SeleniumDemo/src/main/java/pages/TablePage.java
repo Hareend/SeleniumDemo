@@ -31,16 +31,16 @@ public class TablePage {
 		{
 
 			currentName = driver.findElement(By.xpath("//*[@id='dtBasicExample']/tbody/tr[" + i + "]/td[1]")).getText();
-			System.out.println(currentName);
+		//	System.out.println(currentName);
 
 		if (currentName.equalsIgnoreCase("Ashton Cox")) 
 			{
 				Salary = driver.findElement(By.xpath("//*[@id='dtBasicExample']/tbody/tr[" + i + "]/td[6]")).getText();
-				System.out.print(Salary);
+				//System.out.print(Salary);
 				SoftAssert softassert = new SoftAssert(); //Soft Assert
 				softassert.assertEquals("$86,000", Salary);
 				currentAge = driver.findElement(By.xpath("//*[@id='dtBasicExample']/tbody/tr[" + i + "]/td[4]")).getText();
-				System.out.println(currentAge);
+				//System.out.println(currentAge);
 				Assert.assertEquals("66", currentAge); //hard Assert
 				softassert.assertAll(); // to mark the soft assert as fail
 				break;

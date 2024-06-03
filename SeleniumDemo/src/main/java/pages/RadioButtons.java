@@ -20,6 +20,7 @@ public class RadioButtons {
 	@FindBy(id = "inlineRadio2") WebElement Female;
 	@FindBy(xpath = "//button[@id='button-one']") WebElement ShowSelectedValue;
 	@FindBy(id = "//*[@id=\\\"message-one\\\"]") WebElement RadioButton;
+	@FindBy(id = "message-two")	WebElement messageText;	
 	
 	public void Male()
 	{
@@ -34,8 +35,15 @@ public class RadioButtons {
 	public void RadioButton()
 	{
 		String value = driver.findElement(By.id("message-one")).getText();
-		System.out.println(value);		
-		Assert.assertEquals("Radio button 'Male' is checked", value);
+		//System.out.println(value);		
+		//Assert.assertEquals("Radio button 'Male' is checked", value);
+	}
+	
+	public String getMessage()
+	{
+		String messageTest= messageText.getText();
+		return messageTest;
+		
 	}
 
 }

@@ -51,13 +51,15 @@ public class FaceBookPage {
 	
 	public void clickCloseButton()
 	{
+		waitutil= new WaitUtil(driver);
+		waitutil.implicitWait(50);
 		closeButton.click();
 	}
 	
 	public String getText()
 	{
 		String PageText= obsquraZoneText.getText();
-		System.out.println(PageText);
+		//System.out.println(PageText);
 		return PageText;
 	}
 }
